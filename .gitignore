@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# SCons / build artifaktları
+.sconsign.dblite
+*.nvda-addon
+addon/manifest.ini
+addon/locale/*/manifest.ini
+
+# Gettext (derlenmiş) - kaynak .po'ları repo'da tut, .mo'ları tutma
+addon/locale/*/LC_MESSAGES/*.mo
+globalPlugins/**/locales/*/LC_MESSAGES/*.mo
+
+# .pot dosyaları otomatik üretildiyse ignore edebilirsin
+*.pot
+
+# Loglar / geçici çıktılar
+cikti.txt
+*.bat
+bat_paket.bat
+g0.bat
+g1.bat
+g2.bat
+g3.bat
+g4_raporlama.bat
+
+*.log
+
+# Dokümanlar
+# ÖNEMLİ: readme.html kullanıyorsan *.html'yi GENELDEN IGNORE ETME!
+# Eğer MD'den otomatik HTML üretiyorsan, sadece üretilenleri hedefleyerek ignore edebilirsin:
+addon/doc/**/readme.html
